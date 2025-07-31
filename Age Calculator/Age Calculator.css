@@ -1,0 +1,61 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+     display: flex;
+    justify-content:center;
+    background: #171733;
+    background: linear-gradient(90deg,rgba(23, 23, 51, 1) 26%, rgba(59, 196, 116, 1) 74%, rgba(237, 221, 83, 1) 100%);
+}
+.container{
+    margin-top: 15%;
+    background: white;
+    width: 60%;
+    max-width: 20rem;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+h1{
+    text-align: center;
+    font-style: italic;
+}
+.birth{
+    margin-left: 5px;
+    font-family: FreeMono, monospace;
+}
+#Birthdate{
+    margin-top: 10px;
+    margin-left: 8px;
+    width: 160px;
+    height: 30px;
+}
+#Calculate{
+   margin-top: 18px;
+   margin-left: 100px;
+   cursor: pointer;
+   background-color: blue;
+   color: white;
+   width: 100px;
+   border-radius: 10px;
+   height: 35px;
+}
+#Calculate:hover{
+    transform: scale(1.05) translateY(-5px);
+    box-shadow: 0 5px 15px black;
+}
+#result{
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 1.4em;
+    font-weight: 500;
+    font-family: 'Georgia', serif;
+    border: 2px solid brown;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    border-radius: 10px;
+    text-align: center;
+}
+
