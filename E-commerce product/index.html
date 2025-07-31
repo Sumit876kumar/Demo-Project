@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 7: Customizable E-commerce Product Page with Mini-Cart</title>
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-blue-300">
+
+  <div class="flex justify-between items-center p-5 bg-white w-full h-1/4 shadow-2xl">
+    <div class="text-3xl font-bold">T-Shirt</div>
+
+    <button id="itemlist" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">
+      Item
+    </button>
+    
+  </div>
+    
+  <div class="flex">
+    <img id="productImage" class="h-[500px] mt-10 mr-96 ml-7" src="white.jpg" alt="T-Shirt">
+
+       <div id="content">
+      <h2 class="ml-4 text-3xl font-bold mt-20">ParcelYard T-Shirt</h2>
+      <p id="productPrice" class="font-bold mt-7 text-2xl ml-5">$403</p>
+
+      <p class="mt-4 ml-5 font-semibold">Men Solid Round Neck Cotton T-Shirt <br>Choose your size and color to suit
+         your style!</p>
+         <div id="id" class="mt-5">
+      <label class="font-medium text-xl ml-5  ">Size:</label>
+      <select id="selectsize" class=" block w-full p-2 ml-5 mt-4 border rounded bg-white">
+            <option value="S">Small</option>
+            <option value="M">Medium</option>
+            <option value="L">Large</option>
+          </select>
+          </div>
+        <div class="colors">
+           <button class="color-btn bg-white w-6 h-6 rounded-full border-2 mt-5 ml-5" data-image="white.jpg"></button>
+           <button class="color-btn bg-[#d9c78f] w-6 h-6 rounded-full border-2 mt-5 ml-5" data-image="beige.jpg"></button>
+          <button class="color-btn bg-[#2f4f4f] w-6 h-6 rounded-full border-2 mt-5 ml-5" data-image="Teal.jpg"></button>
+          <button class="color-btn  bg-blue-500 w-6 h-6 rounded-full border-2 mt-5 ml-5" data-image="blue.jpg" ></button>
+</div>
+      <div id="Quantity" class="mt-5">
+      <label class="font-medium ml-5">Quantity:</label>
+      <input id="quantityInput" type="number" min="1" value="1" class="w-20 p-2 border rounded bg-white">
+</div>
+      <button id="addToCart" class="mt-4 bg-blue-600 text-white px-4 py-2 rounded-xl hover:bg-blue-700 ml-5">
+        Add to Cart
+      </button>
+
+      </div>
+     <div id="sideCart" class="fixed top-0 right-0 w-80 h-full bg-gray-100 shadow-lg p-5 overflow-y-auto hidden z-50">
+  <div class="flex justify-between items-center mb-4">
+    <h3 class="text-xl font-bold">Cart Items</h3>
+    <button id="closeCart" class="text-red-500 text-xl font-bold hover:text-red-700">✕</button>
+  </div>
+  <ul id="cartItems" class="space-y-2"></ul>
+  <div class="mt-4 font-bold text-lg">
+  Total: $<span id="cartTotal">0</span>
+</div>
+</div>
+
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
